@@ -1,16 +1,29 @@
 import React, { Component } from 'react'
 import EmployeeList from "./EmployeeList"  // Import EmployeeList component
+import LocationList from "./LocationList"
 
 
 export default class Kennel extends Component {
+
+    state = {
+        employees: [
+            { name: "Jessica Younker" },
+            { name: "Jordan Nelson" },
+            { name: "Zoe LeBlanc" },
+            { name: "Blaise Roberts" }
+        ],
+        locations: [
+            { name: "Nashville North" },
+            { name: "Nashville South" }
+        ]
+    }
+
     render() {
         return (
-            <div>
-                <h3>Student Kennels</h3>
-                <h4>Nashville North Location</h4>
-                <h5>500 Puppy Way</h5>
-                <EmployeeList />
-            </div>
+            <React.Fragment>
+                <LocationList locations={this.state.locations} />
+                <EmployeeList employees={this.state.employees} />
+            </React.Fragment>
         );
     }
 }

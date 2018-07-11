@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 
 
-export default class EmployeeList extends Component {
+export default class LocationList extends Component {
     render() {
         return (
             <React.Fragment>
                 {
-                    this.props.employees.map(employee =>
+                    this.props.locations.map(location =>
                         <div>
-                            {employee.name}
+                            {location.name}
                         </div>
                     )
                 }
