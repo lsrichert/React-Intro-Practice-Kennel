@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Employee from "./Employee";
 
 export default class EmployeeList extends Component {
   state = {

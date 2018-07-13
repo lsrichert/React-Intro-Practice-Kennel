@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Location from "./Location";
 
 export default class LocationList extends Component {
   state = {

@@ -1,5 +1,5 @@
 import React from "react";
 
-export default props => {
-  return <li>{props.location.name}</li>;
+export default ({ location }) => {
+  return <li>{location.name}</li>;
 };
