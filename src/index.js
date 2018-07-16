@@ -5,11 +5,10 @@ import registerServiceWorker from "./registerServiceWorker";
 import KennelCompany from "./KennelCompany";
 import "./index.css";
 
-ReactDOM.render(
+ReactDOM.render((
   <Router>
-    <KennelCompany />
-  </Router>,
-  document.querySelector("#root")
-);
+      <KennelCompany />
+  </Router>
+), document.querySelector("#root"))
 
-registerServiceWorker();
+registerServiceWorker()

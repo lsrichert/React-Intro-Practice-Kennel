@@ -16,28 +16,12 @@ export default class AnimalList extends Component {
   render() {
     return (
       <React.Fragment>
-        {/* <Animal /> */}
-        <ul>
-          {this.state.animals.map(animal => (
-            <div key={animal.id}>
-              <li>{animal.name}</li>
-            </div>
+        
+          {this.state.animals.map(dog => (
+          <Animal animal={dog}/>
           ))}
-        </ul>
+      
       </React.Fragment>
     );
   }
 }
-// import React, { Component } from "react";
-// import Animal from "./Animal";
-
-// export default class AnimalList extends Component {
-//   render() {
-//     return (
-//       <React.Fragment>
-//           {this.state.animals.map(animal => <Animal Key =
-//           {animal.id} = animal}/>)}
-//       </React.Fragment>
-//     );
-//   }
-// }
